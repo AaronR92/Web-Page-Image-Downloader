@@ -20,6 +20,7 @@ async def find_image_urls(soup: BeautifulSoup, download: bool, class_value: str)
         else:
             print(image_result['href'])
         counter += 1
+    print("All tasks submitted!")
 
 async def main():
     url = input("Enter url to download images from: ")
