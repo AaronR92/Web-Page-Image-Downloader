@@ -18,7 +18,7 @@ async def find_image_urls(soup: BeautifulSoup, download: bool, class_value: str)
             asyncio.create_task(
                 download_image(image_result['href'], counter))
         else:
-            print(image_result['href'])
+            print(counter + ": " + image_result['href'])
         counter += 1
     print("All tasks submitted!")
 
